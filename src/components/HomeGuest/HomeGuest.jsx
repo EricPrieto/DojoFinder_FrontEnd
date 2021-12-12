@@ -24,7 +24,7 @@ function HomeGuest(){
               <input id="email-register" name="email" className="form-control" type="text" placeholder="dcc@example.com" autoComplete="off" />
               </div>
             <div className="form-group">
-              <label htmlFor="password-register" className="text-muted mb-1">
+              <label htmlFor="password-register" className="text-muted mb-1">               
                 <small>Password</small>
               </label>
               <input id="password-register" name="password" className="form-control" type="password" placeholder="Create a password" />

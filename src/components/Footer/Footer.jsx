@@ -7,13 +7,15 @@ function Footer(){
         <p>
             <RouterLink to="/" className="mx-1">
                 Home
-            </RouterLink> 
-            |<RouterLink className="mx-1" to="/about-us">
+            </RouterLink>{" "}
+            |{" "}
+            <RouterLink className="mx-1" to="/about-us">
                 About Us
-            </RouterLink> 
-            | <RouterLink className="mx-1" to="/contact">
+            </RouterLink>{" "}
+            |{" "}
+            <RouterLink className="mx-1" to="/contact">
                 Contact
-            </RouterLink>
+            </RouterLink>{" "}
         </p>
         <p className="m-0">Copyright &copy; 2021 <a href="/" className="text-muted">Dojo Finder</a>. All rights reserved.</p>
     </footer>

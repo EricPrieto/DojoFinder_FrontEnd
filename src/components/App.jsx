@@ -15,6 +15,7 @@ import Header from './Header/Header';
 import HomeGuest from './HomeGuest/HomeGuest';
 import Footer from './Footer/Footer';
 import About from './About/About';
+import Contact from './Contact/Contact';
 
 
 // import logo from './logo.svg';
@@ -26,9 +27,16 @@ function App(){
     
     <BrowserRouter>
          <Header />
+         <Routes>
+            <Route path='/' element={<HomeGuest />} />
+         </Routes>
         <Routes>
             <Route path='/about-us' element={<About />} />
          </Routes>
+         <Routes>
+            <Route path='/contact' element={<Contact />} />
+         </Routes>
+
          <Footer />
     </BrowserRouter>
   );
