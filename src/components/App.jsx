@@ -1,5 +1,5 @@
 import react, { Component } from 'react';
-import React from 'react';
+import React, { useState} from 'react';
 import ReactDom from "react-dom";
 import {
 
@@ -14,6 +14,7 @@ import HomeGuest from './HomeGuest/HomeGuest';
 import Footer from './Footer/Footer';
 import About from './About/About';
 import Contact from './Contact/Contact';
+import Home from './Home/Home';
 
 
 // import logo from './logo.svg';
@@ -21,13 +22,14 @@ import Contact from './Contact/Contact';
 
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(Boolean(localStorage.getItem('token')))
   return (
 
     <div>
-      <Header />
-      <Routes>
-        <Route path='/' element={<HomeGuest />} />
-      </Routes>
+      <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+      <React.Fragment>
+          {loggedIn ? <Home /> : <HomeGuest />}
+      </React.Fragment>
       <Routes>
         <Route path='/about-us' element={<About />} />
       </Routes>

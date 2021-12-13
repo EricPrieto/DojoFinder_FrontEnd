@@ -1,7 +1,7 @@
 import React,{ useEffect, useState } from "react";
 import axios from "axios";
 
-function HeaderLoggedOut(){
+function HeaderLoggedOut(props){
     const[username, setUsername] = useState()
     const[password, setPassword] = useState()
 
@@ -10,7 +10,9 @@ function HeaderLoggedOut(){
         try {
            const response = await axios.post('http://localhost:8000/api/auth/login/', {username, password})
             if (response.data) {
-                console.log(response.data)
+                localStorage.setItem('token', response.data.token);
+                localStorage.setItem('dojoUsername', response.data.Username);
+                props.setLoggedIn(true)
             }
             else{
                 console.log("Incorrect username and password.")
