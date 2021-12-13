@@ -11,8 +11,9 @@ function HomeGuest(){
   async function handleSubmit(event){
     event.preventDefault()
     try{
-      await axios.post('http://localhost:3306/api/auth/register', {username, email, password})
+      await axios.post('http://localhost:8000/api/auth/register/', {username, email, password})
       console.log("User created!")
+      // Redirect : to profile page
     }
     catch(error){
       console.log("ERROR..")

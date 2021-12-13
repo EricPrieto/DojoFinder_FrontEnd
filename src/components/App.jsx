@@ -2,10 +2,9 @@ import react, { Component } from 'react';
 import React from 'react';
 import ReactDom from "react-dom";
 import {
-  BrowserRouter,
+
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 // import jwt_decode from 'jwt-decode';
 // import axios from 'axios';
@@ -21,23 +20,24 @@ import Contact from './Contact/Contact';
 // import './App.css';
 
 
-function App(){
+function App() {
   return (
-    
-    <BrowserRouter>
-         <Header />
-         <Routes>
-            <Route path='/' element={<HomeGuest />} />
-         </Routes>
-        <Routes>
-            <Route path='/about-us' element={<About />} />
-         </Routes>
-         <Routes>
-            <Route path='/contact' element={<Contact />} />
-         </Routes>
 
-         <Footer />
-    </BrowserRouter>
+    <div>
+      <Header />
+      <Routes>
+        <Route path='/' element={<HomeGuest />} />
+      </Routes>
+      <Routes>
+        <Route path='/about-us' element={<About />} />
+      </Routes>
+      <Routes>
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+
+      <Footer />
+    </div>
+
   );
 }
 
