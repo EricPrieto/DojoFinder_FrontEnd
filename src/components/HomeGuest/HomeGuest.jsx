@@ -4,6 +4,8 @@ import axios from "axios";
 
 
 function HomeGuest(){
+  const [first_name, setFirstName] = useState()
+  const [last_name, setLastName] = useState()
   const [username, setUserName] = useState()
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
@@ -11,7 +13,7 @@ function HomeGuest(){
   async function handleSubmit(event){
     event.preventDefault()
     try{
-      await axios.post('http://localhost:8000/api/auth/register/', {username, email, password})
+      await axios.post('http://localhost:8000/api/auth/register/', {first_name, last_name, username, email, password})
       console.log("User created!")
       // Redirect : to profile page
     }
@@ -28,6 +30,18 @@ function HomeGuest(){
         </div>
         <div className="col-lg-5 pl-lg-5 pb-3 py-lg-5">
           <form onSubmit={handleSubmit}>
+          <div className="form-group">
+              <label htmlFor="first-register" className="text-muted mb-1">
+                <small>First Name</small>
+              </label>
+              <input onChange={e => setFirstName(e.target.value)} id="first-register" name="first_name" className="form-control" type="text" placeholder="Enter Your First Name" autoComplete="off" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="last-register" className="text-muted mb-1">
+                <small>Last Name</small>
+              </label>
+              <input onChange={e => setLastName(e.target.value)} id="last-register" name="last_name" className="form-control" type="text" placeholder="Enter Your Last Name" autoComplete="off" />
+            </div>
             <div className="form-group">
               <label htmlFor="username-register" className="text-muted mb-1">
                 <small>Username</small>
