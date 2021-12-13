@@ -1,13 +1,12 @@
 import React from "react";
+import Page from '../Page';
 
 function Contact(){
     return(
-        <div className="container container--narrow py-md-5">
+        <Page title="Contact">
         <h2>Contact Information will go here</h2>
         <p class="lead text-muted">About us here</p>
-        
-        
-      </div>
+      </Page>
 
     )
 }

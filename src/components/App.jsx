@@ -1,6 +1,6 @@
 import react, { Component } from 'react';
 import React from 'react';
-import ReactDom from "react-dom"
+import ReactDom from "react-dom";
 import {
   BrowserRouter,
   Routes,
@@ -10,7 +10,6 @@ import {
 // import jwt_decode from 'jwt-decode';
 // import axios from 'axios';
 import './App.css'
-
 import Header from './Header/Header';
 import HomeGuest from './HomeGuest/HomeGuest';
 import Footer from './Footer/Footer';

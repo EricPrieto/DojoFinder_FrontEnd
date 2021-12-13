@@ -1,14 +1,14 @@
-import React from "react";
+import React, {useEffect}from 'react'
+// import Container from '../Container';
+import Page from '../Page';
 
 function About(){
+  
     return(
-        <div className="container container--narrow py-md-5">
+      <Page title='About Us'>
         <h2>About Us</h2>
         <p class="lead text-muted">About us here</p>
-        
-        
-      </div>
-
+      </Page>
     )
 }
 
