@@ -22,8 +22,10 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 import Home from './Home/Home';
 import Profile from './Profile/Profile';
+import Search from './Search/Search';
 import axios from 'axios';
-axios.defaults.baseURL = 'http://localhost:8000'
+axios.defaults.baseURL = 'http://localhost:8000';
+
 // import './App.css';
 
 
@@ -36,6 +38,9 @@ function App() {
       <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
       <Routes>
         <Route path='/profile' element={<Profile />} />
+      </Routes>
+      <Routes>
+        <Route path='/search' element={<Search />} />
       </Routes>
       <React.Fragment>
         {loggedIn ? <Home /> : <HomeGuest />}
