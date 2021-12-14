@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
+import './index.css';
 import App from './components/App';
-import 'bootstrap/dist/css/bootstrap.css';
+// import { createPopper } from '@popperjs/core';
+// import Popper from 'popper.js';
+// import 'bootstrap';
+
+// import 'bootstrap/dist/js/bootstrap.js';
+
+
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter,
