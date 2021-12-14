@@ -6,8 +6,6 @@ import HeaderLoggedIn from "../HeaderLoggedIn/HeaderLoggedIn.jsx";
 
 
 function Header(props){
-  
-
     return(
       <header className="header-bar bg-primary mb-3">
         <div className="container d-flex flex-column flex-md-row align-items-center p-3">

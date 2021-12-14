@@ -5,6 +5,7 @@ import {
 
   Routes,
   Route,
+  Link,
 } from "react-router-dom";
 // import jwt_decode from 'jwt-decode';
 // import axios from 'axios';
@@ -15,8 +16,9 @@ import Footer from './Footer/Footer';
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Home from './Home/Home';
-
-
+import Profile from './Profile/Profile';
+import axios from 'axios';
+axios.defaults.baseURL = 'http://localhost:8000'
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -27,8 +29,11 @@ function App() {
 
     <div>
       <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+      <Routes>
+        <Route path='/profile' element={<Profile />} />
+      </Routes>
       <React.Fragment>
-          {loggedIn ? <Home /> : <HomeGuest />}
+        {loggedIn ? <Home /> : <HomeGuest />}
       </React.Fragment>
       <Routes>
         <Route path='/about-us' element={<About />} />
@@ -36,7 +41,6 @@ function App() {
       <Routes>
         <Route path='/contact' element={<Contact />} />
       </Routes>
-
       <Footer />
     </div>
 

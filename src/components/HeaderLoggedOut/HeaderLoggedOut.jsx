@@ -8,10 +8,11 @@ function HeaderLoggedOut(props){
     async function handleSubmit(event){
         event.preventDefault()
         try {
-           const response = await axios.post('http://localhost:8000/api/auth/login/', {username, password})
+           const response = await axios.post('api/auth/login/', {username, password})
             if (response.data) {
                 localStorage.setItem('token', response.data.token);
                 localStorage.setItem('dojoUsername', response.data.Username);
+                localStorage.setItem('dojoAvatar', response.data.Avatar);
                 props.setLoggedIn(true)
             }
             else{
