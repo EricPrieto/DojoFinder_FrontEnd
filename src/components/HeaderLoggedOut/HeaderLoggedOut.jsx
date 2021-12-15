@@ -2,17 +2,17 @@ import React,{ useEffect, useState } from "react";
 import axios from "axios";
 
 function HeaderLoggedOut(props){
-    const[username, setUsername] = useState()
-    const[password, setPassword] = useState()
+    const[username, setUsername] = useState("");
+    const[password, setPassword] = useState("");
 
     async function handleSubmit(event){
         event.preventDefault()
         try {
            const response = await axios.post('api/auth/login/', {username, password})
             if (response.data) {
-                localStorage.setItem('token', response.data.token);
-                localStorage.setItem('dojoUsername', response.data.Username);
-                localStorage.setItem('dojoAvatar', response.data.Avatar);
+                localStorage.setItem('token', response.data.access);
+                localStorage.setItem('dojoUsername', response.data.access);
+               
                 props.setLoggedIn(true)
             }
             else{

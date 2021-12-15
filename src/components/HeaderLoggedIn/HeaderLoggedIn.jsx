@@ -8,7 +8,7 @@ function HeaderLoggedIn(props){
     props.setLoggedIn(false)
     localStorage.removeItem('token')
     localStorage.removeItem('dojoUsername')
-    localStorage.removeItem('dojoAvatar')
+   
 
   
     }

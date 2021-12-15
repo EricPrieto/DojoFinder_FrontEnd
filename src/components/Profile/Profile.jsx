@@ -17,13 +17,21 @@ function Profile(){
     async function handleSubmit(event){
         event.preventDefault()
         try{
-            await axios.post('/api/auth/', {addres: zip_code, phone, token: localStorage.getItem('token')})
+            await axios.post('/api/auth/login/', {headers:{Authorization: "Bearer " + localStorage.getItem('token')}})
+            // {address: zip_code, phone, token: localStorage.getItem('token')})
             console.log("Profile Updated")
         }
         catch(error) {
             console.log("There was a problem.")
         }
     }
+
+    const logout = () => {
+        localStorage.removeItem('token');
+        //alert("Logging you out")
+        window.location.href = "/login";
+    }
+   
     return (
     <Page title="Update Profile">
         <div className="row align-items-center">
