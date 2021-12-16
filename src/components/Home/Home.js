@@ -29,30 +29,39 @@ const Home =(props)=>{
                         <div>{first_names.first_name}</div>
                 )}
             </div>
-            <h2 className="text-center">Hello <strong>{localStorage.getItem("dojoUsername")}</strong>, what would you like to do?.</h2>
-            <div>
+            <h1 className="text-center">Welcome Back to Dojo Finder! </h1>
+            <h2>The internet's premier location for finding martial art schools in the Greater Houston Area.</h2>
+            {/* <strong>{localStorage.getItem("dojoUsername")}</strong> */}<p></p>
+            <h2>Your Recently Saved Schools:</h2>
+
+            <div className="col-lg-9 py-3 py-md-5">
+                
                  <img src="images/JiuJitsu.jpeg" />
                  <p>BLITZ BJJ </p>
                  <FontAwesomeIcon icon={faStar} color="orange"/>
                  <FontAwesomeIcon icon={faStar} color="orange"/>
                  <FontAwesomeIcon icon={faStar} color="orange"/>
-                 <FontAwesomeIcon icon={faStar} color="orange"/> 10 reviews
-                 <p>Location 518 West Blvd, 77573</p>
-                 <p>We Specialize in Gracie/Brazilian Jiu-Jitsu (BJJ) and Mixed-Martial Arts (MMA) for the entire family!
-                    Certified Black Belt Instruction</p>      
-             
-
-             
-                 <img src="images/JiuJitsu.jpeg" />
-                 <p>BLITZ BJJ:Specialize in Gracie/Brazilian Jiu-Jitsu for the entire family!</p>
-                 <FontAwesomeIcon icon={faStar} color="orange"/>
-                 <FontAwesomeIcon icon={faStar} color="orange"/>
-                 <FontAwesomeIcon icon={faStar} color="orange"/>
-                 <FontAwesomeIcon icon={faStar}/> 10 reviews
-                 <p>Location 518 West Blvd, 77573</p>
+                 <FontAwesomeIcon icon={faStar} color="orange"/> 46 reviews
+                 <p>Location: 518 West Blvd, League City 77573</p>
+                 <p>Description: We Specialize in Gracie/Brazilian Jiu-Jitsu (BJJ) and Mixed-Martial Arts (MMA) for the entire family!</p> 
                  <Link className="btn btn-sm btn-success mr-2" to="/review">
                     Write a Review
-                  </Link>  
+                </Link>    
+             </div>  
+             
+             <div className="col-lg-7 py-3 py-md-3">
+                <img src="images/silva.jpeg" />
+                <p>Silva BJJ: Specialize in Gracie/Brazilian Jiu-Jitsu for the entire family!</p>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar}/> 15 reviews
+                <p>Location 5233 Bellaire Blvd, Houston 77573</p>
+                <p>Description: Personalized instruction from 2010 IBJJF Black Belt World Champion Pablo Silva. Men, women, and children as young as 3 yrs. old are sure to benefit from any of our programs </p>
+                <Link className="btn btn-sm btn-success mr-2" to="/review">
+                    Write a Review
+                </Link>  
              </div>
         </Page>
     )

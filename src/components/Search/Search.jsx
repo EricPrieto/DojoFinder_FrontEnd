@@ -1,6 +1,8 @@
 import React, { useEffect, useState, Component } from "react";
 import Page from "../Page";
 import axios from "axios";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -32,26 +34,52 @@ render() {
             <button type="button" class="btn btn-primary">
              <i class="fas fa-search"></i>
              </button>
-
-            <div>
-                <fontAwsomeIcon  className="avg_rating"/>
-            </div>
         
-
-            <div>
-                <p>First School </p>
-                 <img src="logo192.png"/>
+            <div className="col-lg-7 py-3 py-md-3">
+                <img src="images/muytai.jpeg" />
+                <p>Silva BJJ: Specialize in Gracie/Brazilian Jiu-Jitsu for the entire family!</p>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar}/> 120 reviews
+                <p>Location 1145 S. Hwy 45, Houston 77573</p>
+                <p>Description: Personalized instruction from 2010 IBJJF Black Belt World Champion Pablo Silva. Men, women, and children as young as 3 yrs. old are sure to benefit from any of our programs </p>
+             </div>
+             <div className="col-lg-7 py-3 py-md-3">
+                <img src="images/gracie .jpeg" />
+                <p>Silva BJJ: Specialize in Gracie/Brazilian Jiu-Jitsu for the entire family!</p>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar}/> 
+                <FontAwesomeIcon icon={faStar}/> 18 reviews
+                <p>Location 5233 Bellaire Blvd, Houston 77573</p>
+                <p>Description: Personalized instruction from 2010 IBJJF Black Belt World Champion Pablo Silva. Men, women, and children as young as 3 yrs. old are sure to benefit from any of our programs </p>
+             </div>
+             <div className="col-lg-7 py-3 py-md-3">
+                <img src="images/premier.png" />
+                <p>Silva BJJ: Specialize in Gracie/Brazilian Jiu-Jitsu for the entire family!</p>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar}/> 
+                <FontAwesomeIcon icon={faStar}/> 15 reviews
+                <p>Location 5233 Bellaire Blvd, Houston 77573</p>
+                <p>Description: Personalized instruction from 2010 IBJJF Black Belt World Champion Pablo Silva. Men, women, and children as young as 3 yrs. old are sure to benefit from any of our programs </p>
+             </div>
+             <div className="col-lg-7 py-3 py-md-3">
+                <img src="images/Vici Wrestling.jpeg" />
+                <p>Silva BJJ: Specialize in Gracie/Brazilian Jiu-Jitsu for the entire family!</p>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/>
+                <FontAwesomeIcon icon={faStar} color="orange"/> 11 reviews
+                <p>Location 8992 Gulf Freeway, Houston 77573</p>
+                <p>Description: Personalized instruction from 2010 IBJJF Black Belt World Champion Pablo Silva. Men, women, and children as young as 3 yrs. old are sure to benefit from any of our programs </p>
              </div>
 
-             <div>
-             <p>Second School </p>
-                 <img src="images/Judo.jpeg"/>
-             </div>
-
-             <div>
-             <p>Second School </p>
-                 <img src="images/Vici Wrestling.jpeg"/>
-             </div>
         </form>
     </div>
     </Page>

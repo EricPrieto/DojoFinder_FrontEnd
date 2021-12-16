@@ -57,7 +57,6 @@ function Profile(){
                         <input onChange={e => setPhone(e.target.value)} autofocus name="phone" id="phone-update" class="form-control form-control-lg form-control-title" type="text" placeholder="" autocomplete="off" />
                     </div>
 
-
                     <div className="form-group">
                         <p>Select the Martial Arts that interest you</p>
                         <button  class="btn btn-primary dropdown-toggle"
@@ -71,9 +70,8 @@ function Profile(){
                         <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a className="dropdown-item" to="#nogo">Item 1</a>
                             <a className="dropdown-item" to="#nogo">Item 2</a>
-
                         </div>                                     
-                    </div>
+        </div>
 
         <button class="btn btn-primary">Update Profile</button>
             {/* <div class="dropdown">
@@ -81,18 +79,18 @@ function Profile(){
                          Dropdown button
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                         <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                         <a class="dropdown-item" href="#">Something else here</a>
+                         <a class="dropdown-item" href="#">BJJ</a>
+                        <a class="dropdown-item" href="#">Boxing</a>
+                         <a class="dropdown-item" href="#">Judo</a>
                         </ul>
                     </div> */}
 
         </div>
       </form>
-      
-
-
       </div>
+
+
+  
 
     </Page>
     )
