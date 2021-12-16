@@ -41,6 +41,7 @@ const Home =(props)=>{
                  <FontAwesomeIcon icon={faStar} color="orange"/>
                  <FontAwesomeIcon icon={faStar} color="orange"/>
                  <FontAwesomeIcon icon={faStar} color="orange"/>
+                 <FontAwesomeIcon icon={faStar} color="orange"/> 
                  <FontAwesomeIcon icon={faStar} color="orange"/> 46 reviews
                  <p>Location: 518 West Blvd, League City 77573</p>
                  <p>Description: We Specialize in Gracie/Brazilian Jiu-Jitsu (BJJ) and Mixed-Martial Arts (MMA) for the entire family!</p> 

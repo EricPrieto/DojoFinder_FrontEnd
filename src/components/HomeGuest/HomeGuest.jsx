@@ -26,7 +26,7 @@ function HomeGuest(){
       <div className="row align-items-center">
         <div className="col-lg-7 py-3 py-md-5">
           <h1 className="display-3">Welcome to Dojo Finder</h1>
-          <p className="lead text-muted">The internet's premier location for finding martial art schools in the Greater Houston Area. Sign up to search our site to find general information about the martial arts, fighting styles, and martial art schools. ITS FREE! </p>
+          <p className="lead text-muted">The internet's premier location for finding martial art schools in the Greater Houston Area. Sign up to search our site and see school ratings and reviews for specific locations. ITS FREE! </p>
         </div>
         <div className="col-lg-5 pl-lg-5 pb-3 py-lg-5">
           <form onSubmit={handleSubmit}>

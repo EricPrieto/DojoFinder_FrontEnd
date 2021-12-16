@@ -8,7 +8,7 @@ function About(){
       <Page title='About Us'>
         <h1>About Us</h1>
         <p class="lead text-muted">Dojo Finder was established in 2021 for the Martial Arts Enthusiast in and around the Greater Houston Metropolitan Area.
-        Search over 13,00 Martial Arts Schools, Clubs, and Studios to find a specific type of Martial Arts class near you, start search by a style or area. 
+        Search over 5,000 Martial Arts Schools, Clubs, and Studios to find a specific type of Martial Arts class near you. Search by a specific style or area. 
         Our Dojo Directory includes all Styles of Martial Arts Schools.</p>
       </Page>
     )

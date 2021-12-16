@@ -37,47 +37,43 @@ render() {
         
             <div className="col-lg-7 py-3 py-md-3">
                 <img src="images/muytai.jpeg" />
-                <p>Silva BJJ: Specialize in Gracie/Brazilian Jiu-Jitsu for the entire family!</p>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar}/> 120 reviews
-                <p>Location 1145 S. Hwy 45, Houston 77573</p>
-                <p>Description: Personalized instruction from 2010 IBJJF Black Belt World Champion Pablo Silva. Men, women, and children as young as 3 yrs. old are sure to benefit from any of our programs </p>
+                <p>Location 1612 S Mary Road, Houston 77573</p>
+                <p>Description: One of the most accomplished Muay Thai training centers in the USA today! We are committed to giving you the best Muay Thai, Kickboxing, and Boxing experience in a clean, and safe atmosphere. </p>
              </div>
              <div className="col-lg-7 py-3 py-md-3">
                 <img src="images/gracie .jpeg" />
-                <p>Silva BJJ: Specialize in Gracie/Brazilian Jiu-Jitsu for the entire family!</p>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar}/> 
                 <FontAwesomeIcon icon={faStar}/> 18 reviews
-                <p>Location 5233 Bellaire Blvd, Houston 77573</p>
-                <p>Description: Personalized instruction from 2010 IBJJF Black Belt World Champion Pablo Silva. Men, women, and children as young as 3 yrs. old are sure to benefit from any of our programs </p>
+                <p>Location 333 S Fry Road, Houston 77573</p>
+                <p>Description: Rilion Gracie Academy in Houston,TX is one of four academies associated with Rillion Gracie in Texas teaching the real Brazilian Jiu-Jitsu and Self-defense. </p>
              </div>
              <div className="col-lg-7 py-3 py-md-3">
                 <img src="images/premier.png" />
-                <p>Silva BJJ: Specialize in Gracie/Brazilian Jiu-Jitsu for the entire family!</p>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar}/> 
                 <FontAwesomeIcon icon={faStar}/> 15 reviews
                 <p>Location 5233 Bellaire Blvd, Houston 77573</p>
-                <p>Description: Personalized instruction from 2010 IBJJF Black Belt World Champion Pablo Silva. Men, women, and children as young as 3 yrs. old are sure to benefit from any of our programs </p>
+                <p>Description: Al Garza's Premier Martial Arts is a Christian based Martial Arts school that teaches more than just fighting skills. The programs here are intended to develop the whole person through skills, leadership, character, and spiritual training and development.</p>
              </div>
              <div className="col-lg-7 py-3 py-md-3">
                 <img src="images/Vici Wrestling.jpeg" />
-                <p>Silva BJJ: Specialize in Gracie/Brazilian Jiu-Jitsu for the entire family!</p>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar} color="orange"/>
                 <FontAwesomeIcon icon={faStar} color="orange"/> 11 reviews
                 <p>Location 8992 Gulf Freeway, Houston 77573</p>
-                <p>Description: Personalized instruction from 2010 IBJJF Black Belt World Champion Pablo Silva. Men, women, and children as young as 3 yrs. old are sure to benefit from any of our programs </p>
+                <p>Description: The gold standard of development wrestling classes. National All-Americans, State Champions, State Placers and focused competitors make up the staple of this class.</p>
              </div>
 
         </form>

@@ -24,7 +24,7 @@ function Contact(){
           </div>
 
           <label htmlFor="email-body" className="text-muted mb-1 d-block">
-                <small>Write Review Here</small>
+                <small>Write Concern Here</small>
             </label>
             <textarea nameName="body" id="post-body" 
                 className="body-content tall-textarea form-control" type="text">
