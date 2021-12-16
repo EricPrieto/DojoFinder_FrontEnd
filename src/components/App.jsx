@@ -11,10 +11,8 @@ import {
 import './App.css'
 // import { createPopper } from '@popperjs/core';
 // import Popper from 'popper.js';
-
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
-
 import Header from './Header/Header';
 import HomeGuest from './HomeGuest/HomeGuest';
 import Footer from './Footer/Footer';
@@ -23,8 +21,10 @@ import Contact from './Contact/Contact';
 import Home from './Home/Home';
 import Profile from './Profile/Profile';
 import Search from './Search/Search';
+import Review from './Review/Review';
 import axios from 'axios';
 axios.defaults.baseURL = 'http://localhost:8000';
+
 
 // import './App.css';
 
@@ -41,6 +41,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path='/search' element={<Search />} />
+      </Routes>
+      <Routes>
+        <Route path='/review' element={<Review />} />
       </Routes>
       <React.Fragment>
         {loggedIn ? <Home /> : <HomeGuest />}
